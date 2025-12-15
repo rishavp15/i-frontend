@@ -1,0 +1,5 @@
+/* Minimal reset to avoid conflicting layout rules from template */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+
+/* App styles are provided in App.css (copied from original site) */
