@@ -7,10 +7,12 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-  },
-  server: {
-    headers: {
-      'Content-Type': 'application/javascript'
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]'
+      }
     }
   }
 })
