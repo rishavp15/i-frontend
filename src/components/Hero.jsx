@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero" id="home">
       <EnrollModal isOpen={showEnrollModal} onClose={() => setShowEnrollModal(false)} />
       <div className="hero-left">
-        <p className="hero-eyebrow">Become a part of skill hub</p>
+        <p className="hero-eyebrow">Become a part of skilled India</p>
         <h1 className="hero-title">
           Join the student
           <span>network of Skill&nbsp;India</span>

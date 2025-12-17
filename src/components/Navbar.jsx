@@ -6,6 +6,7 @@ export default function Navbar() {
   const [theme, setTheme] = useState('light');
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [authType, setAuthType] = useState('login');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -16,6 +17,9 @@ export default function Navbar() {
     setAuthModalOpen(true);
   };
 
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
       <header className="navbar">
@@ -23,9 +27,14 @@ export default function Navbar() {
           {/* left: white glass background containing logo + text links only */}
           <div className="navbar-glass">
             <div className="nav-left">
-              <Link to="/" className="logo-mark">
-                <span>IP</span>
+              <Link to="/" className="logo-mark" aria-label="Indrapeeth home">
+                <img src="/logo.png" alt="Indrapeeth" className="logo-img" />
               </Link>
+              <button className="mobile-menu-btn" aria-label="Open navigation menu" onClick={toggleMenu} type="button">
+                <span />
+                <span />
+                <span />
+              </button>
               <ul className="nav-menu">
                 <li><Link className="nav-link" to="/about">About</Link></li>
                 <li><Link className="nav-link" to="/programs">Programs</Link></li>
@@ -58,6 +67,27 @@ export default function Navbar() {
           </div>
         </div>
       </header>
+
+      <div className={`mobile-drawer-overlay ${menuOpen ? 'show' : ''}`} onClick={closeMenu} />
+      <aside className={`mobile-drawer ${menuOpen ? 'open' : ''}`}>
+        <div className="mobile-drawer-header">
+          <div className="logo-mark small" aria-label="Indrapeeth">
+            <img src="/logo.png" alt="Indrapeeth" className="logo-img" />
+          </div>
+          <button className="mobile-close-btn" aria-label="Close navigation" onClick={closeMenu} type="button">✕</button>
+        </div>
+        <nav className="mobile-nav-links">
+          <Link onClick={closeMenu} to="/about">About</Link>
+          <Link onClick={closeMenu} to="/programs">Programs</Link>
+          <Link onClick={closeMenu} to="/career">Career</Link>
+          <Link onClick={closeMenu} to="/blog">Blog</Link>
+          <Link onClick={closeMenu} to="/courses">Courses</Link>
+        </nav>
+        <div className="mobile-auth">
+          <button className="btn btn-primary full" type="button" onClick={() => { closeMenu(); handleAuthClick('login'); }}>Login</button>
+          <button className="btn btn-ghost full signup-btn" type="button" onClick={() => { closeMenu(); handleAuthClick('signup'); }}>Sign up</button>
+        </div>
+      </aside>
 
       <AuthModal 
         isOpen={authModalOpen} 
