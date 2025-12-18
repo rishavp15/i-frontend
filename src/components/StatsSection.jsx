@@ -5,7 +5,7 @@ export default function StatsSection() {
     { value: '50K+', label: 'Total learners trained' },
     { value: '95%', label: 'Placement & internship rate' },
     { value: '200+', label: 'Hiring & campus partners' },
-    { value: '4.8 ★', label: 'Average course rating' }
+    { value: '4.8★', label: 'Average course rating' }
   ];
 
   return (

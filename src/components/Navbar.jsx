@@ -24,11 +24,12 @@ export default function Navbar() {
     <>
       <header className="navbar">
         <div className="navbar-row">
-          {/* left: white glass background containing logo + text links only */}
+          {/* left: logo + text links */}
           <div className="navbar-glass">
             <div className="nav-left">
               <Link to="/" className="logo-mark" aria-label="Indrapeeth home">
                 <img src="/logo.png" alt="Indrapeeth" className="logo-img" />
+                <span className="logo-text">INDRAPEETH</span>
               </Link>
               <button className="mobile-menu-btn" aria-label="Open navigation menu" onClick={toggleMenu} type="button">
                 <span />
@@ -48,7 +49,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* right side: auth buttons + theme toggle are outside the white glass */}
+          {/* right side: auth buttons + theme toggle */}
           <div className="nav-extras">
             <div className="nav-center">
               <button className="btn btn-ghost auth-btn" onClick={() => handleAuthClick('signup')}>Sign up</button>

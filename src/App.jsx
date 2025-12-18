@@ -71,6 +71,11 @@ function HomePage() {
 function App() {
   return (
     <>
+      <div className="video-background">
+        <video autoPlay loop muted playsInline>
+          <source src="/herosectionbackground.mp4" type="video/mp4" />
+        </video>
+      </div>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

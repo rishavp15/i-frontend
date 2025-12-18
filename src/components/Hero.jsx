@@ -21,7 +21,7 @@ export default function Hero() {
             onClick={() => setShowEnrollModal(true)}
           >
             <span>Enroll now</span>
-            <span>▶</span>
+            <img src="/enroll_icon.svg" alt="" className="btn-icon" style={{ height: '30px', width: '30px', flexShrink: 0 }} />
           </button>
           <div className="hero-meta hero-meta-cta">
             Enrolled by <strong>2L+ students</strong> across 200+ colleges

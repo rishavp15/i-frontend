@@ -13,7 +13,6 @@ export default function CoursesSection() {
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
               <h3 className="course-name">Machine<br />Learning</h3>
-              <span className="course-offer">10% OFF</span>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
@@ -32,7 +31,6 @@ export default function CoursesSection() {
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
               <h3 className="course-name">Data<br />Science</h3>
-              <span className="course-offer">10% OFF</span>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
@@ -51,7 +49,6 @@ export default function CoursesSection() {
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
               <h3 className="course-name">Artificial<br />Intelligence</h3>
-              <span className="course-offer">10% OFF</span>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
@@ -70,7 +67,6 @@ export default function CoursesSection() {
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
               <h3 className="course-name">Microsoft<br />Azure</h3>
-              <span className="course-offer">10% OFF</span>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
@@ -89,7 +85,6 @@ export default function CoursesSection() {
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
               <h3 className="course-name">Python</h3>
-              <span className="course-offer">10% OFF</span>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
