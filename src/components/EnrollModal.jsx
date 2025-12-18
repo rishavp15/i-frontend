@@ -4,7 +4,7 @@ export default function EnrollModal({ isOpen, onClose, selectedCourse }) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
 
-  const courses = ['Web Development', 'Data Science', 'Machine Learning', 'Cloud Computing', 'AI & NLP', 'Python'];
+  const courses = ['Web Development', 'Data Science', 'Machine Learning', 'Cloud Computing', 'AI & NLP', 'Advance Python'];
 
   useEffect(() => {
     if (selectedCourse && courses.includes(selectedCourse)) {

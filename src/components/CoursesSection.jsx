@@ -84,7 +84,7 @@ export default function CoursesSection() {
           <article className="course-card course-python" data-course="python" role="button" tabIndex="0">
             <div className="course-card-top">
               <p className="course-pill">Trending · CS</p>
-              <h3 className="course-name">Python</h3>
+              <h3 className="course-name">Advance Python</h3>
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">

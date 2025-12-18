@@ -957,6 +957,23 @@ img {
   flex-direction: column;
   gap: 0.5rem;
   flex: 1.2 1 auto;
+  overflow: hidden;
+}
+
+.course-card-top::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.08);
+  opacity: 0.8;
+  transform: rotate(0deg);
+  pointer-events: none;
+  z-index: 0;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .course-card-bottom {
@@ -1043,20 +1060,45 @@ img {
   background: linear-gradient(135deg, #facc15, #f97316);
 }
 
+.course-ml .course-card-top::before {
+  content: 'ML';
+  font-size: 8rem;
+}
+
 .course-ds .course-card-top {
   background: linear-gradient(135deg, #a855f7, #4f46e5);
+}
+
+.course-ds .course-card-top::before {
+  content: 'DS';
+  font-size: 8rem;
 }
 
 .course-ai .course-card-top {
   background: linear-gradient(135deg, #22c55e, #16a34a);
 }
 
+.course-ai .course-card-top::before {
+  content: 'AI';
+  font-size: 8rem;
+}
+
 .course-azure .course-card-top {
   background: linear-gradient(135deg, #fb7185, #f97316);
 }
 
+.course-azure .course-card-top::before {
+  content: 'AZURE';
+  font-size: 8rem;
+}
+
 .course-python .course-card-top {
   background: linear-gradient(135deg, #f9a8d4, #f472b6);
+}
+
+.course-python .course-card-top::before {
+  content: 'PYTHON';
+  font-size: 8rem;
 }
 
 /* ========== STATS ========== */
@@ -1753,6 +1795,25 @@ img {
   color: #e5e7eb;
 }
 
+/* Footer text/link color override: force white for all footer content */
+.footer,
+.footer p,
+.footer a,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer li,
+.footer-legal a,
+.footer-col a,
+.footer-bottom p {
+  color: #ffffff !important;
+}
+
+.footer a:hover { color: #ffffff !important; opacity: 0.92; }
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 960px) {
   .navbar-glass {
@@ -2092,6 +2153,9 @@ img {
 }
 
 @media (max-width: 720px) {
+  #testimonials {
+    padding: 2rem 0.8rem;
+  }
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 1rem;

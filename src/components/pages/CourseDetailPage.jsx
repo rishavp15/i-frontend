@@ -137,7 +137,7 @@ export default function CourseDetailPage() {
       prerequisites: ['Basic Networking', 'Operating Systems Knowledge']
     },
     'python': {
-      title: 'Python Programming',
+      title: 'Advance Python',
       subtitle: 'From basics to advanced',
       description: 'Master Python programming from scratch. Learn syntax, data structures, OOP, web development, data analysis, and automation. Build real projects and become a Python expert.',
       duration: '2 Months',
