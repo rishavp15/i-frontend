@@ -16,8 +16,8 @@ export default function CoursesSection() {
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
-                <span className="course-meta-label">Duration</span>
-                <span className="course-meta-value">2 Months · Project included</span>
+                <span className="course-meta-label">Perks</span>
+                <span className="course-meta-value">Live Classes | 1 on 1 Mentorship</span>
               </div>
               <div className="course-meta-row">
                 <span className="course-meta-label">Program</span>
@@ -34,8 +34,8 @@ export default function CoursesSection() {
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
-                <span className="course-meta-label">Duration</span>
-                <span className="course-meta-value">2 Months · Project included</span>
+                <span className="course-meta-label">Perks</span>
+                <span className="course-meta-value">Live Classes | 1 on 1 Mentorship</span>
               </div>
               <div className="course-meta-row">
                 <span className="course-meta-label">Program</span>
@@ -52,8 +52,8 @@ export default function CoursesSection() {
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
-                <span className="course-meta-label">Duration</span>
-                <span className="course-meta-value">2 Months · Project included</span>
+                <span className="course-meta-label">Perks</span>
+                <span className="course-meta-value">Live Classes | 1 on 1 Mentorship</span>
               </div>
               <div className="course-meta-row">
                 <span className="course-meta-label">Program</span>
@@ -70,8 +70,8 @@ export default function CoursesSection() {
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
-                <span className="course-meta-label">Duration</span>
-                <span className="course-meta-value">2 Months · Project included</span>
+                <span className="course-meta-label">Perks</span>
+                <span className="course-meta-value">Live Classes | 1 on 1 Mentorship</span>
               </div>
               <div className="course-meta-row">
                 <span className="course-meta-label">Program</span>
@@ -88,8 +88,8 @@ export default function CoursesSection() {
             </div>
             <div className="course-card-bottom">
               <div className="course-meta-row">
-                <span className="course-meta-label">Duration</span>
-                <span className="course-meta-value">2 Months · Project included</span>
+                <span className="course-meta-label">Perks</span>
+                <span className="course-meta-value">Live Classes | 1 on 1 Mentorship</span>
               </div>
               <div className="course-meta-row">
                 <span className="course-meta-label">Program</span>

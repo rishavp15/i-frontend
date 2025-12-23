@@ -223,8 +223,6 @@ export default function CourseDetailPage() {
                 <div className="course-top-meta">
                   <span>⭐ {course.rating} Rating</span>
                   <span>👥 {course.students.toLocaleString()} Students</span>
-                  <span>📅 {course.duration}</span>
-                  <span>📊 {course.level}</span>
                 </div>
                 <div className="course-top-actions">
                   <button
@@ -233,7 +231,6 @@ export default function CourseDetailPage() {
                   >
                     🚀 Enroll Now
                   </button>
-                  {course.offer && <span className="course-offer-tag">{course.offer}</span>}
                 </div>
               </section>
 
@@ -288,14 +285,6 @@ export default function CourseDetailPage() {
               <div className="course-card-sticky">
                 <h3>Ready to Start?</h3>
                 <div className="course-details">
-                  <div className="detail-item">
-                    <span className="detail-label">Duration:</span>
-                    <span className="detail-value">{course.duration}</span>
-                  </div>
-                  <div className="detail-item">
-                    <span className="detail-label">Level:</span>
-                    <span className="detail-value">{course.level}</span>
-                  </div>
                   <div className="detail-item">
                     <span className="detail-label">Instructor:</span>
                     <span className="detail-value">{course.instructor}</span>
